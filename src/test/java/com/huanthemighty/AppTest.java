@@ -1,8 +1,10 @@
 package com.huanthemighty;
 
+import java.util.Date;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.mockito.Mockito;
 
 /**
  * Unit test for simple App.
@@ -31,8 +33,9 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( true );
+    public void testApp() {
+        Date s1 = Mockito.mock(Date.class);
+        Date s2 = Mockito.mock(Date.class);
+        System.out.println(s1.equals(s2));
     }
 }
